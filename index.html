@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en ligne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Boutique AWLAD ALI Mode</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="filtrerProduits('hommes')">Hommes</a></li>
+                <li><a href="#" onclick="filtrerProduits('femmes')">Femmes</a></li>
+                <li><a href="#" onclick="filtrerProduits('accessoires')">Accessoires</a></li>
+                <li><a href="#" onclick="filtrerProduits('chaussures')">Chaussures</a></li>
+                <li><a href="#" onclick="filtrerProduits('all')">Tous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Produits -->
+    <section id="produits">
+        <h2>Nos Produits</h2>
+
+        <div class="produit-container">
+            <!-- Produit Exemple -->
+            <div class="produit" data-categorie="hommes">
+                <img src="Image-homme/Veste-homme-décontracté.jpg" alt="Veste Homme">
+                <h3>Veste Homme</h3>
+                <p>Prix : 60€</p>
+                <button onclick="ajouterAuPanier('Veste Homme', 60)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="hommes">
+                <img src="Image-homme/Costume-homme-bleu-marine.jpg" alt="Veste Homme">
+                <h3>Costume Homme</h3>
+                <p>Prix : 100€</p>
+                <button onclick="ajouterAuPanier('Veste Homme', 100)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="hommes">
+                <img src="Image-homme/Costume0.jpg" alt="Veste Homme">
+                <h3>Costume Homme</h3>
+                <p>Prix : 120€</p>
+                <button onclick="ajouterAuPanier('Veste Homme', 120)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="hommes">
+                <img src="Image-homme/Costume1.jpg" alt="Veste Homme">
+                <h3>Costume Homme</h3>
+                <p>Prix : 140€</p>
+                <button onclick="ajouterAuPanier('Veste Homme', 140)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="hommes">
+                <img src="Image-homme/Costume2.jpg" alt="Veste Homme">
+                <h3>Costume Homme</h3>
+                <p>Prix : 160€</p>
+                <button onclick="ajouterAuPanier('Veste Homme', 160)">Ajouter au panier</button>  
+            </div>
+           
+
+
+
+
+
+
+
+
+            <div class="produit" data-categorie="femmes">
+                <img src="Image-femme/Robe-femme.jpg" alt="Robe Femme">
+                <h3>Robe Femme</h3>
+                <p>Prix : 50€</p>
+                <button onclick="ajouterAuPanier('Robe Femme', 50)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="femmes">
+                <img src="Image-femme/Jac-femme.jpg" alt="Robe Femme">
+                <h3>Robe Femme</h3>
+                <p>Prix : 60€</p>
+                <button onclick="ajouterAuPanier('Robe Femme', 60)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="femmes">
+                <img src="Image-femme/Robe-femme1.jpg" alt="Robe Femme">
+                <h3>Robe Femme</h3>
+                <p>Prix : 80€</p>
+                <button onclick="ajouterAuPanier('Robe Femme', 80)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="femmes">
+                <img src="Image-femme/Costume-femme.jpg" alt="Robe Femme">
+                <h3>Robe Femme</h3>
+                <p>Prix : 100€</p>
+                <button onclick="ajouterAuPanier('Robe Femme', 100)">Ajouter au panier</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="produit" data-categorie="chaussures">
+                <img src="Image-homme/Chausseures-hommes.jpg" alt="Chaussures hommes">
+                <h3>Chaussures hommes</h3>
+                <p>Prix : 70€</p>
+                <button onclick="ajouterAuPanier('Chaussures hommes', 70)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="chaussures">
+                <img src="Image-homme/Chausseures-hommes1.jpg" alt="Chaussures hommes">
+                <h3>Chaussures hommes</h3>
+                <p>Prix : 100€</p>
+                <button onclick="ajouterAuPanier('Chaussures hommes', 100)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="chaussures">
+                <img src="Image-homme/Chausseures-hommes2.jpg" alt="Chaussures hommes">
+                <h3>Chaussures hommes</h3>
+                <p>Prix : 110€</p>
+                <button onclick="ajouterAuPanier('Chaussures hommes', 110)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="chaussures">
+                <img src="Image-homme/Chaussures-hommes3.jpg" alt="Chaussures hommes">
+                <h3>Chaussures hommes</h3>
+                <p>Prix : 120€</p>
+                <button onclick="ajouterAuPanier('Chaussures hommes', 120)">Ajouter au panier</button>  
+            </div>
+
+
+
+            <div class="produit" data-categorie="accessoires">
+                <img src="Image-femme/Sac1-femme.jpg" alt="Sac à main">
+                <h3>Sac à main</h3>
+                <p>Prix : 40€</p>
+                <button onclick="ajouterAuPanier('Sac à main', 40)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="accessoires">
+                <img src="Image-femme/Sac2-femme.jpg" alt="Sac à main">
+                <h3>Sac à main</h3>
+                <p>Prix : 50€</p>
+                <button onclick="ajouterAuPanier('Sac à main', 50)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="accessoires">
+                <img src="Image-femme/Sac2-femme.jpg" alt="Sac à main">
+                <h3>Sac à main</h3>
+                <p>Prix : 80€</p>
+                <button onclick="ajouterAuPanier('Sac à main', 80)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="accessoires">
+                <img src="Image-femme/Sac3-femme.jpg" alt="Sac à main">
+                <h3>Sac à main</h3>
+                <p>Prix : 100€</p>
+                <button onclick="ajouterAuPanier('Sac à main', 100)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="accessoires">
+                <img src="Image-femme/Sac4-femme.jpg" alt="Sac à main">
+                <h3>Sac à main</h3>
+                <p>Prix : 150€</p>
+                <button onclick="ajouterAuPanier('Sac à main', 150)">Ajouter au panier</button>
+            </div>
+            <div class="produit" data-categorie="accessoires">
+                <img src="Image-femme/Sac5-femme.jpg" alt="Sac à main">
+                <h3>Sac à main</h3>
+                <p>Prix : 200€</p>
+                <button onclick="ajouterAuPanier('Sac à main', 200)">Ajouter au panier</button>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Panier -->
+    <section id="panier">
+        <h2>Votre Panier</h2>
+        <ul id="panier-liste"></ul>
+        <p id="total-panier">Total : 0€</p>
+        <button onclick="afficherPaiement()">Finaliser l'achat</button>
+    </section>
+
+    <!-- Interface de paiement -->
+    <div id="paiement-section" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fermerPaiement()">&times;</span>
+            <h2>Paiement</h2>
+            <p id="recap-panier"></p>
+            <button onclick="confirmerPaiement()">Confirmer le paiement</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
